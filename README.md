@@ -23,7 +23,7 @@ If any packages are not installed run a pip installation by issuing the followin
     conda install package-name
 
 # Instructructions
-In order to run the analysis, open the Notebook and run all cells. 
+In order to run the analysis, download the datasets: NanoDSF_summary.xlsx, i29a_i53a.csv, i82a_i22a.csv, wt_i77a.csv and the Notebook analysis_script.ipynb. Open the Notebook and run all cells. 
 The code should output 20 sets of fitting parameters, m and s parameters are globally shared and should only take one value. g parameters are local and should only be shared among WT samples, as denoted by the list called 'mutant_label'. All parameter sets correspond to the respective index (using 1-indexing) of the 'mutant-label' list. 
 The code should further output a plot of all normalized protein solubility data-points as well as the fitted denaturation curves. 
 The code can be expected to have a runtime of approximately 20 minutes on a regular desktop computer.
