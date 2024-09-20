@@ -38,13 +38,21 @@ The MD simulations are split into simulation of the full fibril structure and si
 
 ## MD simulation - Stable fibril
 This folder contains the following files:
+
 Starting structure for the MD simulation: conf.gro
+
 Trajectory file from the MD simulation: NativeContactsRun_conf_run_9_NOPBC.xtc
+
 Jupyter notebook calculating the fibril state contacts: NativeContacts_Fulltraj.ipynb
+
 Output from NativeContacts_Fulltraj.ipynb: SideChainContacts.txt
+
 
 ## MD simulation - Transition state
 This folder conatains the following files:
+
 Plumed file used to bias the the simulation based on experimental Φ-values and the SideChainContacts output: plumed_kappa100.dat
+
 Full trajectory file from the simulation with enforced bias: conf_run_K100_NOPCB.xtc
+
 Plumed output file of residue coordination throughout the simulation with enforced bias: COORDINATION_K100
