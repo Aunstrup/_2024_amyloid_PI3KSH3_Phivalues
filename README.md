@@ -47,6 +47,28 @@ Jupyter notebook calculating the fibril state contacts: NativeContacts_Fulltraj.
 
 Output from NativeContacts_Fulltraj.ipynb: SideChainContacts.txt
 
+### Notebook System requirements
+The software requires python version 3.8 or higher.
+
+
+### Notebook Installation guide
+To open the Notebook, install Miniconda and make sure all required packages are installed by issuing the following terminal commands
+
+    conda create -n --environmentname
+    source activate --environmentname
+
+Or open the Notebook in an existing conda environment.
+
+Ensure that all dependent packages and libraries are installed: pandas, numpy, matplotlib, math, lmfit and scipy. These can be controlled by issuing the following commands in the conda-environment
+
+    conda search --packagename
+
+If any packages are not installed run a pip installation by issuing the following command in the conda-environment
+
+    conda install package-name
+
+### Instructructions
+In order to run the analysis, download the files: NativeContactsRun_conf_run_9_NOPBC.xtc, conf.gro and the Notebook NativeContacts_Fulltraj.ipynb. Open the Notebook and run all cells. The code should output 10 residues and their respective contact number as well as a txt file SideChainContacts.txt with the atomic contacts for each residue, the number of contacts as well as their fractional coefficient. The code can be expected to have a runtime of approximately 5 minutes. 
 
 ## MD simulation - Transition state
 This folder conatains the following files:
